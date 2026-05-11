@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Spacecraft Docking Simulator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LEFT HUD -->
+
+  <div class="hud">
+
+    <h1>🚀 Spacecraft Docking Simulator</h1>
+
+    <div class="stats">
+
+      <p>
+        Velocity:
+        <span id="velocity">0</span>
+      </p>
+
+      <p>
+        Rotation:
+        <span id="rotation">0</span>°
+      </p>
+
+      <p>
+        Fuel:
+        <span id="fuel">100</span>%
+      </p>
+
+      <p id="status">
+        Status: Approaching
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+
+  <div class="sidebar">
+
+    <h2>🛰 Mission Controls</h2>
+
+    <p><b>W</b> → Forward Thrust</p>
+
+    <p><b>A</b> → Rotate Left</p>
+
+    <p><b>D</b> → Rotate Right</p>
+
+    <p><b>S</b> → Stabilize / Slow Down</p>
+
+    <hr>
+
+    <h3>🎯 Objective</h3>
+
+    <p>
+      Dock safely with the blue station
+      at low velocity.
+    </p>
+
+    <hr>
+
+    <h3>⚠ Docking Rules</h3>
+
+    <p>
+      ✅ Slow speed = Successful Dock
+    </p>
+
+    <p>
+      ❌ High speed = Crash
+    </p>
+
+    <button id="restartBtn">
+      🔄 Restart Mission
+    </button>
+
+  </div>
+
+  <!-- GAME CANVAS -->
+
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
